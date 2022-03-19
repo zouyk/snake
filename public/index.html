@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <!-- 食物 -->
+            <div id="food">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- 蛇 -->
+            <div id="snake">
+                <div></div>
+            </div>
+        </div>
+        <!-- 积分  -->
+        <div class="game-info">
+            <div>Score:<span id="score"></span></div>
+            <div>level:<span id="level"></span></div>
+        </div>
+
+        <div id="mask">
+            <div class="mask-cont">
+                <p>摸鱼小游戏:贪吃蛇</p>
+                <button id="button"> 开始游戏</button>
+            </div>
+        </div>
+        <div id="game-over" style="display:none;">
+            <div class="game-over-cont">
+                <div class="game-over-info">
+                    <h3>游戏结束,请再接再厉吧!</p>
+                    <p class="game-over-level">等级:<span id="over-level">1</span></p>
+                    <p class="game-over-score">得分:<span id="over-score">10</span></p>
+                </div>
+                <button id="game-over-agin">再来一局</button>
+                <button id="game-over-out">退出</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
